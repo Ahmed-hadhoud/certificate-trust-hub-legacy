@@ -1,0 +1,177 @@
+{
+  "today": "2027-03-15",
+  "notFoundSamples": ["000000", "ZZZZZZZZ"],
+  "courses": [
+    {
+      "id": "dm",
+      "name": "Intro to Digital Marketing",
+      "items": [
+        { "key": "Q1", "label": "Quiz 1", "type": "quiz", "skill": "Campaign basics" }
+      ],
+      "versions": [{ "version": 1, "required": [], "publishedAt": "2024-06-01" }]
+    },
+    {
+      "id": "excel",
+      "name": "Excel for Business",
+      "items": [
+        { "key": "Q1", "label": "Quiz 1", "type": "quiz", "skill": "Formulas and references" },
+        { "key": "Q2", "label": "Quiz 2", "type": "quiz", "skill": "Data cleaning" },
+        { "key": "Q3", "label": "Quiz 3", "type": "quiz", "skill": "Pivot tables" }
+      ],
+      "versions": [
+        { "version": 1, "required": [], "publishedAt": "2024-09-01" },
+        {
+          "version": 2,
+          "required": ["Q1", "Q2", "Q3"],
+          "changeNote": "Added three graded quizzes and a module on pivot tables.",
+          "publishedAt": "2027-01-01"
+        }
+      ]
+    },
+    {
+      "id": "sql",
+      "name": "SQL Fundamentals",
+      "items": [
+        { "key": "Q1", "label": "Quiz 1", "type": "quiz", "skill": "SELECT and filtering" },
+        { "key": "Q2", "label": "Quiz 2", "type": "quiz", "skill": "Joins and aggregation" },
+        { "key": "EXAM", "label": "Final exam", "type": "exam", "proctored": true, "skill": "Query design under exam conditions" }
+      ],
+      "versions": [{ "version": 1, "required": ["Q1", "Q2", "EXAM"], "publishedAt": "2025-03-01" }]
+    },
+    {
+      "id": "pm",
+      "name": "Product Management Essentials",
+      "items": [
+        { "key": "Q1", "label": "Quiz 1", "type": "quiz", "skill": "Product strategy" },
+        { "key": "Q2", "label": "Quiz 2", "type": "quiz", "skill": "Prioritisation" },
+        { "key": "PROJECT", "label": "Final project", "type": "project", "skill": "Discovery and product spec" }
+      ],
+      "versions": [
+        { "version": 1, "required": [], "publishedAt": "2025-01-15" },
+        { "version": 2, "required": ["Q1", "Q2"], "changeNote": "Added two graded quizzes.", "publishedAt": "2026-09-01" },
+        {
+          "version": 3,
+          "required": ["Q1", "Q2", "PROJECT"],
+          "changeNote": "Added a graded final project and a module on discovery interviews.",
+          "publishedAt": "2027-02-15"
+        }
+      ]
+    },
+    {
+      "id": "py",
+      "name": "Data Analysis with Python",
+      "items": [
+        { "key": "Q1", "label": "Quiz 1", "type": "quiz", "skill": "pandas basics" },
+        { "key": "Q2", "label": "Quiz 2", "type": "quiz", "skill": "Data visualisation" },
+        { "key": "EXAM", "label": "Final exam", "type": "exam", "proctored": true, "skill": "Statistical reasoning" },
+        { "key": "PROJECT", "label": "Final project", "type": "project", "skill": "End-to-end analysis and storytelling" }
+      ],
+      "versions": [{ "version": 1, "required": ["Q1", "Q2", "EXAM", "PROJECT"], "publishedAt": "2025-05-01" }]
+    },
+    {
+      "id": "cs",
+      "name": "Customer Service Skills",
+      "items": [
+        { "key": "Q1", "label": "Quiz 1", "type": "quiz", "skill": "Handling complaints" }
+      ],
+      "versions": [{ "version": 1, "required": [], "publishedAt": "2024-04-01" }]
+    },
+    {
+      "id": "pmb",
+      "name": "Project Management Basics",
+      "items": [
+        { "key": "Q1", "label": "Quiz 1", "type": "quiz", "skill": "Planning and scheduling" },
+        { "key": "Q2", "label": "Quiz 2", "type": "quiz", "skill": "Risk management" }
+      ],
+      "versions": [
+        { "version": 1, "required": ["Q1"], "publishedAt": "2025-02-01" },
+        { "version": 2, "required": ["Q1", "Q2"], "changeNote": "Added a second quiz on risk management.", "publishedAt": "2027-02-01" }
+      ]
+    },
+    {
+      "id": "ux",
+      "name": "UX Design Fundamentals",
+      "items": [
+        { "key": "Q1", "label": "Quiz 1", "type": "quiz", "skill": "User research" },
+        { "key": "Q2", "label": "Quiz 2", "type": "quiz", "skill": "Interaction design" },
+        { "key": "PROJECT", "label": "Final project", "type": "project", "skill": "Prototyping and visual design" }
+      ],
+      "versions": [{ "version": 1, "required": ["Q1", "Q2", "PROJECT"], "publishedAt": "2025-01-10" }]
+    }
+  ],
+  "learners": [
+    { "id": "L01", "name": "Mona Hassan", "company": null, "sharing": "public" },
+    { "id": "L02", "name": "Karim Adel", "company": "Nile Telecom", "sharing": "public" },
+    { "id": "L03", "name": "Salma Nabil", "company": null, "sharing": "public" },
+    { "id": "L04", "name": "Omar Fathy", "company": "Delta Bank", "sharing": "public" },
+    { "id": "L05", "name": "Nour Ibrahim", "company": null, "sharing": "public" },
+    { "id": "L06", "name": "Youssef Ali", "company": null, "sharing": "public" },
+    { "id": "L07", "name": "Hana Samir", "company": null, "sharing": "public" },
+    { "id": "L08", "name": "Ahmed Mostafa", "company": "Cairo Logistics", "sharing": "private" },
+    { "id": "L09", "name": "Laila Khaled", "company": null, "sharing": "public" },
+    { "id": "L10", "name": "Mahmoud Zaki", "company": null, "sharing": "public" },
+    { "id": "L11", "name": "Dina Farouk", "company": null, "sharing": "private" },
+    { "id": "L12", "name": "Tarek Hamdy", "company": "Nile Telecom", "sharing": "public" },
+    { "id": "L13", "name": "Rana Wael", "company": null, "sharing": "public" },
+    { "id": "L14", "name": "Sherif Magdy", "company": "Delta Bank", "sharing": "public" },
+    { "id": "L15", "name": "Amira Tawfik", "company": null, "sharing": "public" },
+    { "id": "L16", "name": "Hossam Naguib", "company": null, "sharing": "public" },
+    { "id": "L17", "name": "Nadine Sherif", "company": "Cairo Logistics", "sharing": "public" },
+    { "id": "L18", "name": "Walid Saad", "company": null, "sharing": "public" },
+    { "id": "L19", "name": "Reem Gaber", "company": null, "sharing": "private" },
+    { "id": "L20", "name": "Mostafa Ragab", "company": null, "sharing": "public" },
+    { "id": "L21", "name": "Heba Mansour", "company": "Nile Telecom", "sharing": "public" },
+    { "id": "L22", "name": "Ali Hassan", "company": null, "sharing": "public" },
+    { "id": "L23", "name": "Farida Younis", "company": null, "sharing": "public" },
+    { "id": "L24", "name": "Karim Samir", "company": "Delta Bank", "sharing": "public" }
+  ],
+  "certificates": [
+    { "id": "483201", "code": "K7M2QX9P", "learnerId": "L01", "courseId": "dm", "courseVersion": 1, "issuedAt": "2027-01-20", "state": "Completed", "results": {}, "caseNote": "No-assessment course" },
+    { "id": "517764", "code": "H4R8TW3N", "learnerId": "L02", "courseId": "cs", "courseVersion": 1, "issuedAt": "2027-02-02", "state": "Completed", "results": {}, "caseNote": "No assessment, corporate" },
+    { "id": "629038", "code": "P9D5VC6J", "learnerId": "L03", "courseId": "excel", "courseVersion": 2, "issuedAt": "2027-01-28", "state": "Verified", "results": { "Q1": { "score": 88, "attempts": 1 }, "Q2": { "score": 92, "attempts": 1 }, "Q3": { "score": 79, "attempts": 2 } }, "caseNote": "Auto-graded quizzes only" },
+    { "id": "704455", "code": "W3F7ZB2K", "learnerId": "L04", "courseId": "excel", "courseVersion": 2, "issuedAt": "2027-02-10", "state": "Completed", "results": { "Q1": { "score": 90, "attempts": 1 }, "Q2": { "score": 65, "attempts": 3 }, "Q3": { "score": null, "attempts": 0 } }, "caseNote": "Corporate, unfinished items" },
+    { "id": "316982", "code": "T6N4XK8D", "learnerId": "L05", "courseId": "sql", "courseVersion": 1, "issuedAt": "2027-02-14", "state": "Verified", "results": { "Q1": { "score": 85, "attempts": 1 }, "Q2": { "score": 81, "attempts": 2 }, "EXAM": { "score": 91, "attempts": 1 } }, "caseNote": "Proctored exam path" },
+    { "id": "852147", "code": "B8Q2MR5Y", "learnerId": "L06", "courseId": "sql", "courseVersion": 1, "issuedAt": "2027-02-16", "state": "Completed", "results": { "Q1": { "score": 78, "attempts": 1 }, "Q2": { "score": 74, "attempts": 2 }, "EXAM": { "score": 62, "attempts": 5 } }, "caseNote": "Attempts exhausted" },
+    { "id": "245890", "code": "G5K9HC4V", "learnerId": "L07", "courseId": "pm", "courseVersion": 2, "issuedAt": "2027-01-12", "state": "Verified", "results": { "Q1": { "score": 84, "attempts": 1 }, "Q2": { "score": 87, "attempts": 1 } }, "caseNote": "Course revised after issue" },
+    { "id": "931626", "code": "S2Y6PJ7K", "learnerId": "L08", "courseId": "pm", "courseVersion": 3, "issuedAt": "2027-03-01", "state": "Verified", "results": { "Q1": { "score": 80, "attempts": 1 }, "Q2": { "score": 83, "attempts": 2 }, "PROJECT": { "score": 76, "attempts": 1, "feedback": "Good structure; trade-offs were explained briefly. Add more evidence for the assumptions." } }, "caseNote": "Private, corporate" },
+    { "id": "478053", "code": "D7C3NV9R", "learnerId": "L09", "courseId": "py", "courseVersion": 1, "issuedAt": "2027-02-20", "state": "Verified", "results": { "Q1": { "score": 91, "attempts": 1 }, "Q2": { "score": 88, "attempts": 1 }, "EXAM": { "score": 95, "attempts": 1 }, "PROJECT": { "score": 97, "attempts": 1, "feedback": "Excellent analysis and a clear story. The code is clean and well documented." } }, "caseNote": "All assessment types, Excellent" },
+    { "id": "660219", "code": "M4H8GT2X", "learnerId": "L10", "courseId": "py", "courseVersion": 1, "issuedAt": "2027-02-22", "state": "Completed", "results": { "Q1": { "score": 82, "attempts": 1 }, "Q2": { "score": 79, "attempts": 1 }, "EXAM": { "score": 71, "attempts": 1 }, "PROJECT": { "score": null, "attempts": 0 } }, "caseNote": "Missing project" },
+    { "id": "394871", "code": "R9K5WD6B", "learnerId": "L11", "courseId": "ux", "courseVersion": 1, "issuedAt": "2027-03-05", "state": "Verified", "results": { "Q1": { "score": 76, "attempts": 1 }, "Q2": { "score": 81, "attempts": 1 }, "PROJECT": { "score": 84, "attempts": 1, "feedback": "Solid research and readable prototypes; the accessibility notes were thin." } }, "caseNote": "Private, self-directed" },
+    { "id": "187326", "code": "X3V7QP4C", "learnerId": "L12", "courseId": "ux", "courseVersion": 1, "issuedAt": "2027-03-06", "state": "Completed", "results": { "Q1": { "score": 58, "attempts": 4 }, "Q2": { "score": 62, "attempts": 3 }, "PROJECT": { "score": null, "attempts": 0 } }, "caseNote": "Corporate, low engagement" },
+    { "id": "752904", "code": "J6B2KN8T", "learnerId": "L13", "courseId": "pmb", "courseVersion": 1, "issuedAt": "2027-01-25", "state": "Completed", "results": { "Q1": { "score": 68, "attempts": 2 } }, "caseNote": "Below 70, course since revised" },
+    { "id": "603518", "code": "F8Z4KS3M", "learnerId": "L14", "courseId": "pmb", "courseVersion": 2, "issuedAt": "2027-03-02", "state": "Verified", "results": { "Q1": { "score": 90, "attempts": 1 }, "Q2": { "score": 86, "attempts": 1 } }, "caseNote": "Corporate, Verified" },
+    { "id": "218443", "code": "N5W9DG7H", "learnerId": "L15", "courseId": "dm", "courseVersion": 1, "issuedAt": "2025-11-04", "state": "Legacy", "results": {}, "caseNote": "Legacy, no-assessment course" },
+    { "id": "549077", "code": "V2T6RC5Q", "learnerId": "L16", "courseId": "excel", "courseVersion": 1, "issuedAt": "2025-09-18", "state": "Legacy", "results": {}, "caseNote": "Legacy, can upgrade" },
+    { "id": "826391", "code": "Z7M3YX9F", "learnerId": "L17", "courseId": "cs", "courseVersion": 1, "issuedAt": "2025-12-10", "state": "Legacy", "results": {}, "caseNote": "Legacy, corporate" },
+    { "id": "371560", "code": "Q4P8JH2W", "learnerId": "L18", "courseId": "sql", "courseVersion": 1, "issuedAt": "2026-06-30", "state": "Legacy", "results": {}, "caseNote": "Legacy, proctored exam course" },
+    { "id": "940285", "code": "Q9S5BN6E", "learnerId": "L19", "courseId": "pm", "courseVersion": 1, "issuedAt": "2026-03-15", "state": "Legacy", "results": {}, "caseNote": "Legacy and newer version" },
+    { "id": "135792", "code": "C3G7FK4Z", "learnerId": "L20", "courseId": "excel", "courseVersion": 2, "issuedAt": "2027-01-30", "state": "Revoked", "revoked": { "reason": "error", "date": "2027-02-12", "previousState": "Completed" }, "results": {}, "caseNote": "Issued by mistake" },
+    { "id": "468210", "code": "Y8D2VT5N", "learnerId": "L21", "courseId": "py", "courseVersion": 1, "issuedAt": "2027-02-25", "state": "Revoked", "revoked": { "reason": "fraud", "date": "2027-03-10", "previousState": "Verified" }, "results": {}, "caseNote": "Fraud confirmed" },
+    { "id": "697134", "code": "U6X4HM9A", "learnerId": "L22", "courseId": "ux", "courseVersion": 1, "issuedAt": "2027-03-08", "state": "Verified", "results": { "Q1": { "score": 79, "attempts": 2 }, "Q2": { "score": 82, "attempts": 1 }, "PROJECT": { "score": 88, "attempts": 1, "feedback": "Thoughtful flows and clear rationale; strong visual hierarchy." } }, "caseNote": "Upgraded from Legacy, same ID", "upgradedFrom": { "issuedAt": "2026-04-02", "state": "Legacy" } },
+    { "id": "285946", "code": "E5R9WC3S", "learnerId": "L23", "courseId": "cs", "courseVersion": 1, "issuedAt": "2027-03-09", "state": "Completed", "results": {}, "caseNote": "No assessment, self-directed" },
+    { "id": "713859", "code": "K2J6NB8G", "learnerId": "L24", "courseId": "sql", "courseVersion": 1, "issuedAt": "2027-02-27", "state": "Verified", "results": { "Q1": { "score": 72, "attempts": 3 }, "Q2": { "score": 74, "attempts": 2 }, "EXAM": { "score": 83, "attempts": 1 } }, "caseNote": "Corporate, Good band minimum" }
+  ],
+  "accessRequests": [
+    { "id": "AR-1", "certId": "394871", "learnerId": "L11", "email": "recruiter@acme-hr.example", "requester": "Acme HR", "createdAt": "2027-03-12", "status": "pending" },
+    { "id": "AR-2", "certId": "931626", "learnerId": "L08", "email": "talent@sample-partner.example", "requester": "Sample Partner", "createdAt": "2027-03-09", "status": "approved", "decidedAt": "2027-03-10" }
+  ],
+  "disputes": [
+    { "id": "DS-1", "certId": "245890", "reason": "The course now has a project and this certificate does not reflect it", "email": "verifier@sample-employer.example", "createdAt": "2027-03-13", "status": "open" },
+    { "id": "DS-2", "certId": "629038", "reason": "The quiz scores look too high for this candidate", "email": "hr@sample-employer.example", "createdAt": "2027-02-20", "status": "rejected", "outcome": "Evidence checked; certificate unchanged", "closedAt": "2027-02-24" }
+  ],
+  "policies": [
+    {
+      "version": 1,
+      "name": "Pre-standard",
+      "effectiveFrom": "2020-01-01",
+      "until": "2026-12-31",
+      "summary": "Before 1 Jan 2027 a certificate meant the learner finished the course. No assessment results were checked or shown."
+    },
+    {
+      "version": 2,
+      "name": "Trust Standard 1.0",
+      "effectiveFrom": "2027-01-01",
+      "summary": "Results are public by default. Verified requires all required items at 70 or more. Certificates are never downgraded."
+    }
+  ]
+}
